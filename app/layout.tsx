@@ -9,11 +9,12 @@ import Script from "next/script";
 import StoreProvider from "./lib/redux/StoreProvider";
 import LoadingPageContainer from "./components/LoadingContainer";
 import GoogleAnalytics from "./googleAnalytics";
+import { themeScript } from "./lib/themeScript";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AniProject",
+  title: "Anime Focus TV",
   description:
     "A anime platform that showcases popular and trending animes, mangas and movies. Explore the latest releases, keep watching your favorites, and discover what's popular in the anime world.",
   manifest: "/manifest.json",
@@ -26,6 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Script id="theme-script" dangerouslySetInnerHTML={{ __html: themeScript }} />
       <Script src="/register-sw.js" />
       <GoogleAnalytics /> {/* Google Analytics */}
       <body className={inter.className}>
