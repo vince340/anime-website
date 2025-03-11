@@ -61,7 +61,7 @@ function NavLinks() {
                     href="https://github.com/ErickLimaS/anime-website/"
                     target="_blank"
                   >
-                    Forked From ErickLimaS
+                    Anime Focus TV
                   </Link>
                 </li> 
             */}
