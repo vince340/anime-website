@@ -10,6 +10,7 @@ import MenuList from "./components/MenuList";
 import SearchFormContainer from "./components/SearchFormContainer";
 import NewsNavListHover from "./components/NewsNavListHover";
 import NotificationsContainer from "./components/Notifications";
+import ThemeToggle from "../../components/ThemeToggle"; // Added import for ThemeToggle
 
 function Header() {
   return (
@@ -66,6 +67,7 @@ function Header() {
           <NotificationsContainer />
 
           <UserSideMenu />
+          <ThemeToggle/> {/* Added ThemeToggle component */}
         </div>
       </div>
     </header>
