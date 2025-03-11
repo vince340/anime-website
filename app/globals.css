@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 :root {
   --max-width: 1380px;
 
   --btn-border-radius: 12px;
+  --font-family-main: 'Poppins', var(--font-family-sans-serif);
 
   /* breakpoints */
   --breakpoint-sm: 576px;
@@ -43,8 +46,8 @@
 
   --error: #f44336;
 
-  --brand-color: #3a86ff;
-  --brand-dark-color: #0a3c7e;
+  --brand-color: #7c4dff;
+  --brand-dark-color: #4527a0;
 
   --accent-1: #3a86ff; /* Blue */
   --accent-2: #30a46c; /* Green */
@@ -88,6 +91,7 @@ body {
   background-color: var(--background);
   color: var(--text-primary);
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: var(--font-family-main);
 }
 
 body:has(*[data-disabled-scroll=true]) {
@@ -107,7 +111,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: var(--font-family-sans-serif);
+  font-family: var(--font-family-main);
+  letter-spacing: -0.02em;
 }
 
 p,
@@ -122,10 +127,12 @@ input {
 
 h1 {
   font-size: var(--font-size--h1);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
 h2 {
   font-size: var(--font-size--h2);
+  text-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
 h3 {
@@ -222,3 +229,4 @@ li {
   height: inherit;
   width: inherit !important;
 
+}
